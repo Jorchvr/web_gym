@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TITAN FITNESS — Transforma tu cuerpo. Domina tu mente. El gimnasio más completo con vista al mar, equipo premium y clases especializadas." />
+  <title>TITAN FITNESS — Forjamos Titanes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ LOADER ============ -->
+  <div class="loader" id="loader">
+    <div class="loader__logo">
+      <span class="loader__word">TITAN</span>
+      <span class="loader__word">FITNESS</span>
+    </div>
+    <div class="loader__bar"><span></span></div>
+    <div class="loader__percent" id="loaderPercent">0%</div>
+  </div>
+
+  <!-- ============ CURSOR ============ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ============ SCROLL PROGRESS ============ -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo" data-magnetic>
+        <span class="nav__logo-mark">◤</span>
+        <span class="nav__logo-text">TITAN<em>FIT</em></span>
+      </a>
+
+      <nav class="nav__menu">
+        <a href="#servicios" class="nav__link"><span>01</span>Servicios</a>
+        <a href="#instalaciones" class="nav__link"><span>02</span>Instalaciones</a>
+        <a href="#planes" class="nav__link"><span>03</span>Planes</a>
+        <a href="#coaches" class="nav__link"><span>04</span>Coaches</a>
+        <a href="#contacto" class="nav__link"><span>05</span>Contacto</a>
+      </nav>
+
+      <a href="#planes" class="nav__cta" data-magnetic>
+        <span>Únete Ahora</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+
+      <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero__grid"></div>
+    <div class="hero__glow hero__glow--1"></div>
+    <div class="hero__glow hero__glow--2"></div>
+
+    <div class="hero__content">
+      <div class="hero__eyebrow reveal">
+        <span class="pulse-dot"></span>
+        <span>ABIERTO 24/7 · LOS CABOS</span>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="hero__line"><span data-split>FORJAMOS</span></span>
+        <span class="hero__line hero__line--outline"><span data-split>TITANES</span></span>
+        <span class="hero__line hero__line--small"><span data-split>desde</span> <span class="hero__accent" data-split>2015</span></span>
+      </h1>
+
+      <p class="hero__desc reveal">
+        Más de <strong>3,200 m²</strong> de instalaciones premium con vista al mar, equipos <strong>Life Fitness</strong>,
+        clases especializadas y coaches certificados. Aquí no entrenas, aquí <em>te transformas</em>.
+      </p>
+
+      <div class="hero__actions reveal">
+        <a href="#planes" class="btn btn--primary" data-magnetic>
+          <span>Comienza gratis</span>
+          <div class="btn__hover"></div>
+        </a>
+        <a href="#instalaciones" class="btn btn--ghost" data-magnetic>
+          <span class="btn__play">▶</span>
+          <span>Ver instalaciones</span>
+        </a>
+      </div>
+
+      <div class="hero__stats">
+        <div class="stat reveal">
+          <div class="stat__num" data-count="3200">0</div>
+          <div class="stat__label">m² de instalaciones</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__num" data-count="12">0</div>
+          <div class="stat__label">clases semanales</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__num" data-count="8500">0</div>
+          <div class="stat__label">titanes activos</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__num" data-count="24">0</div>
+          <div class="stat__label">horas al día</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <div class="hero__image-wrap" data-parallax="0.15">
+        <img src="assets/img/gym-1.png" alt="Cardio con vista al mar" class="hero__image" />
+        <div class="hero__badge">
+          <span class="hero__badge-num">01</span>
+          <span class="hero__badge-txt">CARDIO ZONE<br/><em>vista al pacífico</em></span>
+        </div>
+      </div>
+      <div class="hero__floating hero__floating--1">Life Fitness ⚡</div>
+      <div class="hero__floating hero__floating--2">+3,200m² ▲</div>
+    </div>
+
+    <div class="hero__scroll">
+      <span>SCROLL</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee">
+    <div class="marquee__track">
+      <span>FUERZA ✦</span><span>DISCIPLINA ✦</span><span>RESULTADOS ✦</span>
+      <span>COMUNIDAD ✦</span><span>ENERGÍA ✦</span><span>EVOLUCIÓN ✦</span>
+      <span>FUERZA ✦</span><span>DISCIPLINA ✦</span><span>RESULTADOS ✦</span>
+      <span>COMUNIDAD ✦</span><span>ENERGÍA ✦</span><span>EVOLUCIÓN ✦</span>
+    </div>
+  </div>
+
+  <!-- ============ SERVICIOS ============ -->
+  <section class="section services" id="servicios">
+    <div class="section__head">
+      <span class="section__tag reveal">◤ 01 — QUÉ OFRECEMOS</span>
+      <h2 class="section__title">
+        <span data-split>Un servicio</span>
+        <span data-split>para cada </span><span class="italic" data-split>objetivo</span>
+      </h2>
+      <p class="section__lead reveal">
+        Desde pesas libres hasta pilates reformer. Todo en un solo lugar, con la mejor tecnología del mercado.
+      </p>
+    </div>
+
+    <div class="services__grid">
+      <article class="service reveal" data-tilt>
+        <div class="service__num">01</div>
+        <div class="service__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 12h12M4 8v8M8 6v12M16 6v12M20 8v8"/></svg>
+        </div>
+        <h3>Musculación</h3>
+        <p>Zona de pesas libres con racks olímpicos, mancuernas hasta 60kg, y máquinas Life Fitness de última generación.</p>
+        <span class="service__arrow">→</span>
+      </article>
+
+      <article class="service reveal" data-tilt>
+        <div class="service__num">02</div>
+        <div class="service__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg>
+        </div>
+        <h3>Cardio</h3>
+        <p>Caminadoras, elípticas y bicicletas con vista panorámica al mar. Entrena mientras contemplas el atardecer.</p>
+        <span class="service__arrow">→</span>
+      </article>
+
+      <article class="service reveal" data-tilt>
+        <div class="service__num">03</div>
+        <div class="service__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20L20 4M4 4l16 16"/></svg>
+        </div>
+        <h3>Cross Training</h3>
+        <p>Área funcional con turf premium, kettlebells, TRX, battle ropes y todo lo necesario para HIIT y WOD's.</p>
+        <span class="service__arrow">→</span>
+      </article>
+
+      <article class="service reveal" data-tilt>
+        <div class="service__num">04</div>
+        <div class="service__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M2 12h20M6 6l12 12M18 6L6 18"/></svg>
+        </div>
+        <h3>Pilates Reformer</h3>
+        <p>Estudio dedicado con reformers profesionales y clases grupales o privadas. Cuerpo, mente y respiración.</p>
+        <span class="service__arrow">→</span>
+      </article>
+
+      <article class="service reveal" data-tilt>
+        <div class="service__num">05</div>
+        <div class="service__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>
+        </div>
+        <h3>Entrenamiento Personal</h3>
+        <p>Coaches certificados que diseñan planes 100% personalizados según tu objetivo, tu nivel y tu ritmo.</p>
+        <span class="service__arrow">→</span>
+      </article>
+
+      <article class="service reveal" data-tilt>
+        <div class="service__num">06</div>
+        <div class="service__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l9 4v6c0 5-4 8-9 8s-9-3-9-8V7l9-4z"/></svg>
+        </div>
+        <h3>Nutrición</h3>
+        <p>Asesoría con nutriólogos deportivos. Plan alimenticio, control de progreso y suplementación consciente.</p>
+        <span class="service__arrow">→</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ INSTALACIONES / GALERÍA ============ -->
+  <section class="section facilities" id="instalaciones">
+    <div class="section__head">
+      <span class="section__tag reveal">◤ 02 — INSTALACIONES</span>
+      <h2 class="section__title">
+        <span data-split>Un espacio </span><span class="italic" data-split>diseñado</span>
+        <span data-split>para superarte</span>
+      </h2>
+    </div>
+
+    <div class="gallery">
+      <div class="gallery__item gallery__item--wide reveal" data-tilt>
+        <img src="assets/img/gym-1.png" alt="Zona de cardio con vista al mar" />
+        <div class="gallery__overlay">
+          <span class="gallery__num">/ 01</span>
+          <h3>Cardio con vista al Pacífico</h3>
+          <p>Entrenar frente al mar convierte cada sesión en un ritual. Equipo Life Fitness de última generación.</p>
+        </div>
+      </div>
+
+      <div class="gallery__item reveal" data-tilt>
+        <img src="assets/img/gym-2.png" alt="Zona funcional con turf verde" />
+        <div class="gallery__overlay">
+          <span class="gallery__num">/ 02</span>
+          <h3>Zona Funcional</h3>
+          <p>Turf premium para HIIT, movilidad y entrenamiento explosivo.</p>
+        </div>
+      </div>
+
+      <div class="gallery__item reveal" data-tilt>
+        <img src="assets/img/gym-3.png" alt="Estudio de Pilates Reformer" />
+        <div class="gallery__overlay">
+          <span class="gallery__num">/ 03</span>
+          <h3>Studio Pilates</h3>
+          <p>Diseño biofílico. Máquinas reformer profesionales.</p>
+        </div>
+      </div>
+
+      <div class="gallery__item gallery__item--wide reveal" data-tilt>
+        <img src="assets/img/gym-4.png" alt="Zona de sentadillas y máquinas" />
+        <div class="gallery__overlay">
+          <span class="gallery__num">/ 04</span>
+          <h3>Powerlifting Zone</h3>
+          <p>Smith machine, sentadillas libres, prensa y rack olímpico completo. El santuario de la fuerza.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VIDEO SHOWCASE ============ -->
+  <section class="video-showcase">
+    <div class="video-showcase__bg">
+      <img src="assets/img/gym-2.png" alt="" data-parallax="0.2" />
+      <div class="video-showcase__veil"></div>
+    </div>
+    <div class="video-showcase__content reveal">
+      <span class="section__tag">◤ TOUR VIRTUAL</span>
+      <h2>Recorre nuestras <span class="italic">instalaciones</span></h2>
+      <p>Un tour en 60 segundos. Descubre cada rincón de TITAN antes de tu primera visita.</p>
+      <button class="play-btn" data-magnetic>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        <span class="play-btn__ring"></span>
+        <span class="play-btn__ring play-btn__ring--2"></span>
+      </button>
+      <p class="video-showcase__hint">02:34 · 4K</p>
+    </div>
+  </section>
+
+  <!-- ============ PLANES ============ -->
+  <section class="section plans" id="planes">
+    <div class="section__head">
+      <span class="section__tag reveal">◤ 03 — MEMBRESÍAS</span>
+      <h2 class="section__title">
+        <span data-split>Elige tu </span><span class="italic" data-split>camino</span>
+      </h2>
+      <p class="section__lead reveal">Sin permanencia. Sin sorpresas. Cancela cuando quieras.</p>
+    </div>
+
+    <div class="plans__grid">
+      <article class="plan reveal">
+        <header class="plan__head">
+          <span class="plan__badge">STARTER</span>
+          <h3>Básico</h3>
+          <p>Ideal para comenzar tu camino</p>
+        </header>
+        <div class="plan__price">
+          <span class="plan__currency">$</span>
+          <span class="plan__num">599</span>
+          <span class="plan__period">/ mes</span>
+        </div>
+        <ul class="plan__features">
+          <li>✓ Acceso 6am — 10pm</li>
+          <li>✓ Área de pesas y cardio</li>
+          <li>✓ Casilleros día</li>
+          <li>✗ Clases grupales</li>
+          <li>✗ Estudio Pilates</li>
+        </ul>
+        <a href="#contacto" class="plan__cta" data-magnetic>Empezar</a>
+      </article>
+
+      <article class="plan plan--featured reveal">
+        <div class="plan__ribbon">MÁS ELEGIDO</div>
+        <header class="plan__head">
+          <span class="plan__badge">PRO</span>
+          <h3>Titan</h3>
+          <p>Todo lo que necesitas para transformarte</p>
+        </header>
+        <div class="plan__price">
+          <span class="plan__currency">$</span>
+          <span class="plan__num">899</span>
+          <span class="plan__period">/ mes</span>
+        </div>
+        <ul class="plan__features">
+          <li>✓ Acceso <strong>24/7</strong></li>
+          <li>✓ Todas las zonas</li>
+          <li>✓ Clases grupales ilimitadas</li>
+          <li>✓ 1 sesión con coach al mes</li>
+          <li>✓ Estudio Pilates (2/sem)</li>
+        </ul>
+        <a href="#contacto" class="plan__cta plan__cta--primary" data-magnetic>Quiero este</a>
+      </article>
+
+      <article class="plan reveal">
+        <header class="plan__head">
+          <span class="plan__badge">ELITE</span>
+          <h3>Olimpo</h3>
+          <p>Para quien quiere resultados extremos</p>
+        </header>
+        <div class="plan__price">
+          <span class="plan__currency">$</span>
+          <span class="plan__num">1,499</span>
+          <span class="plan__period">/ mes</span>
+        </div>
+        <ul class="plan__features">
+          <li>✓ Todo lo del plan Titan</li>
+          <li>✓ Coach personal 3x/sem</li>
+          <li>✓ Plan nutricional</li>
+          <li>✓ Análisis corporal mensual</li>
+          <li>✓ Recuperación & masaje</li>
+        </ul>
+        <a href="#contacto" class="plan__cta" data-magnetic>Ir por todo</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ COACHES ============ -->
+  <section class="section coaches" id="coaches">
+    <div class="section__head">
+      <span class="section__tag reveal">◤ 04 — EL EQUIPO</span>
+      <h2 class="section__title">
+        <span data-split>Coaches que</span>
+        <span class="italic" data-split>marcan la diferencia</span>
+      </h2>
+    </div>
+
+    <div class="coaches__list">
+      <div class="coach reveal">
+        <div class="coach__num">01</div>
+        <div class="coach__name">Alejandra Ríos</div>
+        <div class="coach__spec">Pilates & Movilidad</div>
+        <div class="coach__years">12 años</div>
+        <div class="coach__img"><img src="assets/img/gym-3.png" alt=""></div>
+      </div>
+      <div class="coach reveal">
+        <div class="coach__num">02</div>
+        <div class="coach__name">Marco "Titán" Vega</div>
+        <div class="coach__spec">Fuerza & Powerlifting</div>
+        <div class="coach__years">15 años</div>
+        <div class="coach__img"><img src="assets/img/gym-4.png" alt=""></div>
+      </div>
+      <div class="coach reveal">
+        <div class="coach__num">03</div>
+        <div class="coach__name">Sofía Camacho</div>
+        <div class="coach__spec">HIIT & Funcional</div>
+        <div class="coach__years">8 años</div>
+        <div class="coach__img"><img src="assets/img/gym-2.png" alt=""></div>
+      </div>
+      <div class="coach reveal">
+        <div class="coach__num">04</div>
+        <div class="coach__name">Iván Peraza</div>
+        <div class="coach__spec">Nutrición Deportiva</div>
+        <div class="coach__years">10 años</div>
+        <div class="coach__img"><img src="assets/img/gym-1.png" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIOS ============ -->
+  <section class="section testimonials">
+    <div class="section__head">
+      <span class="section__tag reveal">◤ 05 — TESTIMONIOS</span>
+      <h2 class="section__title">
+        <span data-split>Historias </span><span class="italic" data-split>reales</span>
+      </h2>
+    </div>
+
+    <div class="testimonials__track" id="testimonialsTrack">
+      <article class="testimonial">
+        <div class="testimonial__stars">★★★★★</div>
+        <p>"Bajé 14 kilos en 6 meses. Los coaches son de otro nivel y las instalaciones parecen de película."</p>
+        <footer><strong>Laura M.</strong> · Titan desde 2023</footer>
+      </article>
+      <article class="testimonial">
+        <div class="testimonial__stars">★★★★★</div>
+        <p>"La vista al mar mientras corres es una locura. Nunca había disfrutado tanto entrenar."</p>
+        <footer><strong>Diego R.</strong> · Titan desde 2022</footer>
+      </article>
+      <article class="testimonial">
+        <div class="testimonial__stars">★★★★★</div>
+        <p>"El estudio de Pilates es espectacular. Mi postura cambió completamente en 3 meses."</p>
+        <footer><strong>Carla F.</strong> · Titan desde 2024</footer>
+      </article>
+      <article class="testimonial">
+        <div class="testimonial__stars">★★★★★</div>
+        <p>"Después de años sin resultados, aquí encontré método, comunidad y resultados. Vale cada peso."</p>
+        <footer><strong>Ramiro S.</strong> · Titan desde 2021</footer>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ CTA / CONTACTO ============ -->
+  <section class="section contact" id="contacto">
+    <div class="contact__inner">
+      <div class="contact__copy">
+        <span class="section__tag reveal">◤ 06 — EMPIEZA HOY</span>
+        <h2 class="section__title">
+          <span data-split>Tu primera </span>
+          <span class="italic" data-split>semana</span>
+          <span data-split>es </span><span class="hero__accent" data-split>gratis</span>.
+        </h2>
+        <p class="reveal">Agenda tu tour, conoce las instalaciones, entrena 7 días sin costo. Sin tarjeta, sin compromiso.</p>
+
+        <div class="contact__info">
+          <div class="contact__info-block reveal">
+            <span>UBICACIÓN</span>
+            <p>Blvd. Marina 2801, Los Cabos, BCS</p>
+          </div>
+          <div class="contact__info-block reveal">
+            <span>HORARIO</span>
+            <p>24/7 · 365 días al año</p>
+          </div>
+          <div class="contact__info-block reveal">
+            <span>CONTACTO</span>
+            <p>+52 624 000 0000<br/>hola@titanfit.mx</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact__form reveal" onsubmit="event.preventDefault(); this.querySelector('.form__msg').classList.add('is-visible');">
+        <div class="form__field">
+          <input type="text" required id="fName" placeholder=" " />
+          <label for="fName">Nombre completo</label>
+        </div>
+        <div class="form__field">
+          <input type="email" required id="fEmail" placeholder=" " />
+          <label for="fEmail">Email</label>
+        </div>
+        <div class="form__field">
+          <input type="tel" required id="fPhone" placeholder=" " />
+          <label for="fPhone">Teléfono</label>
+        </div>
+        <div class="form__field">
+          <select id="fPlan" required>
+            <option value="">¿Qué te interesa?</option>
+            <option>Básico</option>
+            <option>Titan</option>
+            <option>Olimpo</option>
+            <option>Solo tour</option>
+          </select>
+        </div>
+        <div class="form__field form__field--full">
+          <textarea id="fMsg" placeholder=" " rows="3"></textarea>
+          <label for="fMsg">Mensaje (opcional)</label>
+        </div>
+        <button type="submit" class="btn btn--primary form__submit" data-magnetic>
+          <span>Reservar mi semana gratis</span>
+          <div class="btn__hover"></div>
+        </button>
+        <p class="form__msg">✓ ¡Recibido! Te llamamos en menos de 24hrs.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__giant">TITAN<span>FIT</span></div>
+    <div class="footer__grid">
+      <div>
+        <h4>Menú</h4>
+        <a href="#servicios">Servicios</a>
+        <a href="#instalaciones">Instalaciones</a>
+        <a href="#planes">Planes</a>
+        <a href="#coaches">Coaches</a>
+      </div>
+      <div>
+        <h4>Redes</h4>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">YouTube</a>
+        <a href="#">Facebook</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="#">Aviso de Privacidad</a>
+        <a href="#">Términos y Condiciones</a>
+        <a href="#">Reglamento</a>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>Blvd. Marina 2801<br/>Los Cabos, BCS</p>
+        <p>+52 624 000 0000</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 TITAN FITNESS — Todos los derechos reservados.</span>
+      <span>Forjado con ⚡ en Baja California Sur.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
