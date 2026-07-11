@@ -115,6 +115,25 @@ button { border:none; background:none; color:inherit; font-family:inherit; curso
   transition:color .2s var(--ease), background .2s var(--ease);
 }
 .nav__link:hover { color:var(--accent); background:var(--accent-soft); }
+.nav__actions {
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.nav__lang {
+  padding:9px 14px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:100px;
+  font-family:'JetBrains Mono', monospace;
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.08em;
+  color:var(--text-2);
+  transition:border-color .2s var(--ease), color .2s var(--ease), background .2s var(--ease);
+}
+.nav__lang:hover { border-color:var(--accent); color:var(--accent); background:var(--accent-soft); }
+.nav__lang:active { transform:scale(.95); }
 .nav__cta {
   padding:11px 20px;
   background:var(--accent);

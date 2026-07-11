@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="45 LIFE FITNESS — 45 minutos que transforman tu día. Gimnasio premium en Plaza Novva, Tezal, Los Cabos con equipo Life Fitness, spinning y pilates." />
+  <meta name="description" content="45 LIFE FITNESS — 45 minutos que transforman tu día. Gimnasio premium en Plaza Novva, Tezal, Los Cabos." />
   <meta name="theme-color" content="#ffffff" />
   <title>45 LIFE FITNESS — Plaza Novva, Tezal · Los Cabos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,7 +14,6 @@
 </head>
 <body>
 
-  <!-- ============ SCROLL PROGRESS ============ -->
   <div class="scroll-progress" id="scrollProgress"></div>
 
   <!-- ============ NAVBAR ============ -->
@@ -26,17 +25,20 @@
       </a>
 
       <nav class="nav__menu" id="navMenu">
-        <a href="#servicios" class="nav__link">Servicios</a>
-        <a href="#instalaciones" class="nav__link">Instalaciones</a>
-        <a href="#precios" class="nav__link">Precios</a>
-        <a href="#horarios" class="nav__link">Horarios</a>
-        <a href="#contacto" class="nav__link">Contacto</a>
+        <a href="#servicios" class="nav__link" data-en="Services">Servicios</a>
+        <a href="#instalaciones" class="nav__link" data-en="Facilities">Instalaciones</a>
+        <a href="#precios" class="nav__link" data-en="Prices">Precios</a>
+        <a href="#horarios" class="nav__link" data-en="Hours">Horarios</a>
+        <a href="#contacto" class="nav__link" data-en="Contact">Contacto</a>
       </nav>
 
-      <a href="https://wa.me/526241581056" target="_blank" rel="noopener" class="nav__cta">
-        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.5 3.5A11 11 0 0 0 3.9 17.1L2.9 21l4-1a11 11 0 0 0 13.6-16.5zM12 20a8 8 0 0 1-4-1.1l-.3-.2-2.4.6.7-2.3-.2-.4A8 8 0 1 1 12 20zm4.5-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7 1c-.2.2-.3.2-.5.1a6.6 6.6 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.4c-.2 0-.5.1-.7.3a2.6 2.6 0 0 0-.8 1.9c0 1.1.8 2.2.9 2.4a9 9 0 0 0 3.5 3c.5.2.9.3 1.2.4a2.9 2.9 0 0 0 1.4 0c.4-.1 1.2-.5 1.4-1s.2-.9.1-1l-.5-.2z"/></svg>
-        <span>WhatsApp</span>
-      </a>
+      <div class="nav__actions">
+        <button class="nav__lang" id="langBtn" aria-label="Switch language">EN</button>
+        <a href="https://wa.me/526241581056" target="_blank" rel="noopener" class="nav__cta">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.5 3.5A11 11 0 0 0 3.9 17.1L2.9 21l4-1a11 11 0 0 0 13.6-16.5zM12 20a8 8 0 0 1-4-1.1l-.3-.2-2.4.6.7-2.3-.2-.4A8 8 0 1 1 12 20zm4.5-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7 1c-.2.2-.3.2-.5.1a6.6 6.6 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.4c-.2 0-.5.1-.7.3a2.6 2.6 0 0 0-.8 1.9c0 1.1.8 2.2.9 2.4a9 9 0 0 0 3.5 3c.5.2.9.3 1.2.4a2.9 2.9 0 0 0 1.4 0c.4-.1 1.2-.5 1.4-1s.2-.9.1-1l-.5-.2z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
 
       <button class="nav__burger" id="burger" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -52,37 +54,37 @@
         <span>PLAZA NOVVA · TEZAL · LOS CABOS</span>
       </div>
 
-      <h1 class="hero__title reveal">
+      <h1 class="hero__title reveal" data-en="45 minutes<br/><span class='hero__title-accent'>that transform you</span>">
         45 minutos<br/>
         <span class="hero__title-accent">que te transforman</span>
       </h1>
 
-      <p class="hero__desc reveal">
+      <p class="hero__desc reveal" data-en="High-intensity <strong>Life Fitness</strong> workouts in 45 minutes. Maximum results, minimum excuses. GYM, Spinning and Pilates Reformer under one roof.">
         Entrenamientos <strong>Life Fitness</strong> de alta intensidad en 45 minutos.
         Máximo resultado, mínima excusa. GYM, Spinning y Pilates Reformer bajo un solo techo.
       </p>
 
       <div class="hero__actions reveal">
-        <a href="#precios" class="btn btn--primary">Ver precios</a>
-        <a href="#instalaciones" class="btn btn--ghost">Conocer instalaciones →</a>
+        <a href="#precios" class="btn btn--primary" data-en="See prices">Ver precios</a>
+        <a href="#instalaciones" class="btn btn--ghost" data-en="See facilities →">Conocer instalaciones →</a>
       </div>
 
       <div class="hero__stats">
         <div class="stat reveal">
           <div class="stat__num" data-count="45">0</div>
-          <div class="stat__label">min por sesión</div>
+          <div class="stat__label" data-en="min per session">min por sesión</div>
         </div>
         <div class="stat reveal">
           <div class="stat__num" data-count="30">0</div>
-          <div class="stat__label">clases semanales</div>
+          <div class="stat__label" data-en="weekly classes">clases semanales</div>
         </div>
         <div class="stat reveal">
           <div class="stat__num" data-count="1200">0</div>
-          <div class="stat__label">miembros activos</div>
+          <div class="stat__label" data-en="active members">miembros activos</div>
         </div>
         <div class="stat reveal">
           <div class="stat__num" data-count="17">0</div>
-          <div class="stat__label">horas al día</div>
+          <div class="stat__label" data-en="hours a day">horas al día</div>
         </div>
       </div>
     </div>
@@ -91,7 +93,7 @@
       <img src="assets/img/wa-3.jpeg" alt="Cardio con vista al mar en 45 Life Fitness" class="hero__image" />
       <div class="hero__badge">
         <span class="hero__badge-num">45'</span>
-        <span class="hero__badge-txt">EL FORMATO<br/><em>que lo cambia todo</em></span>
+        <span class="hero__badge-txt" data-en="THE FORMAT<br/><em>that changes everything</em>">EL FORMATO<br/><em>que lo cambia todo</em></span>
       </div>
     </div>
   </section>
@@ -99,9 +101,9 @@
   <!-- ============ SERVICIOS ============ -->
   <section class="section services" id="servicios">
     <div class="section__head">
-      <span class="section__tag reveal">01 — QUÉ OFRECEMOS</span>
-      <h2 class="section__title reveal">Un servicio para cada objetivo.</h2>
-      <p class="section__lead reveal">
+      <span class="section__tag reveal" data-en="01 — WHAT WE OFFER">01 — QUÉ OFRECEMOS</span>
+      <h2 class="section__title reveal" data-en="A service for every goal.">Un servicio para cada objetivo.</h2>
+      <p class="section__lead reveal" data-en="From free weights to Pilates Reformer and Spinning. Everything in one place, with the best technology on the market.">
         Desde pesas libres hasta pilates reformer y spinning. Todo en un solo lugar, con la mejor tecnología del mercado.
       </p>
     </div>
@@ -111,58 +113,58 @@
         <div class="service__icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 12h12M4 8v8M8 6v12M16 6v12M20 8v8"/></svg>
         </div>
-        <h3>Musculación</h3>
-        <p>Zona de pesas libres con racks olímpicos, mancuernas hasta 60kg y máquinas Life Fitness.</p>
+        <h3 data-en="Weight Training">Musculación</h3>
+        <p data-en="Free-weight zone with Olympic racks, dumbbells up to 60kg and Life Fitness machines.">Zona de pesas libres con racks olímpicos, mancuernas hasta 60kg y máquinas Life Fitness.</p>
       </article>
 
       <article class="service reveal">
         <div class="service__icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg>
         </div>
-        <h3>Cardio</h3>
-        <p>Caminadoras, elípticas y bicicletas con vista panorámica al atardecer de Los Cabos.</p>
+        <h3 data-en="Cardio">Cardio</h3>
+        <p data-en="Treadmills, ellipticals and bikes with a panoramic view of the Los Cabos sunset.">Caminadoras, elípticas y bicicletas con vista panorámica al atardecer de Los Cabos.</p>
       </article>
 
       <article class="service reveal">
         <div class="service__icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="9"/></svg>
         </div>
-        <h3>Spinning</h3>
-        <p>Estudio dedicado con bicicletas profesionales, sonido inmersivo y coaches certificados.</p>
+        <h3 data-en="Spinning">Spinning</h3>
+        <p data-en="Dedicated studio with pro bikes, immersive sound and certified coaches.">Estudio dedicado con bicicletas profesionales, sonido inmersivo y coaches certificados.</p>
       </article>
 
       <article class="service reveal">
         <div class="service__icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M2 12h20M6 6l12 12M18 6L6 18"/></svg>
         </div>
-        <h3>Pilates Reformer</h3>
-        <p>Estudio con reformers profesionales. Clases grupales o privadas. Cuerpo, mente y respiración.</p>
+        <h3 data-en="Pilates Reformer">Pilates Reformer</h3>
+        <p data-en="Studio with pro reformers. Group or private classes. Body, mind and breath.">Estudio con reformers profesionales. Clases grupales o privadas. Cuerpo, mente y respiración.</p>
       </article>
 
       <article class="service reveal">
         <div class="service__icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20L20 4M4 4l16 16"/></svg>
         </div>
-        <h3>Funcional</h3>
-        <p>Área con turf premium, kettlebells, TRX y battle ropes para HIIT y WOD's de 45 minutos.</p>
+        <h3 data-en="Functional">Funcional</h3>
+        <p data-en="Area with premium turf, kettlebells, TRX and battle ropes for 45-minute HIIT and WODs.">Área con turf premium, kettlebells, TRX y battle ropes para HIIT y WOD's de 45 minutos.</p>
       </article>
 
       <article class="service reveal">
         <div class="service__icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>
         </div>
-        <h3>Entrenamiento personal</h3>
-        <p>Coaches certificados que diseñan planes 100% personalizados según tu objetivo y nivel.</p>
+        <h3 data-en="Personal Training">Entrenamiento personal</h3>
+        <p data-en="Certified coaches designing 100% personalized plans based on your goal and level.">Coaches certificados que diseñan planes 100% personalizados según tu objetivo y nivel.</p>
       </article>
     </div>
   </section>
 
-  <!-- ============ INSTALACIONES / GALERÍA ============ -->
+  <!-- ============ INSTALACIONES ============ -->
   <section class="section facilities" id="instalaciones">
     <div class="section__head">
-      <span class="section__tag reveal">02 — INSTALACIONES</span>
-      <h2 class="section__title reveal">Un espacio diseñado para superarte.</h2>
-      <p class="section__lead reveal">Equipo Life Fitness y Matrix de última generación en un ambiente que motiva.</p>
+      <span class="section__tag reveal" data-en="02 — FACILITIES">02 — INSTALACIONES</span>
+      <h2 class="section__title reveal" data-en="A space designed to help you go further.">Un espacio diseñado para superarte.</h2>
+      <p class="section__lead reveal" data-en="Latest-generation Life Fitness and Matrix equipment in a motivating environment.">Equipo Life Fitness y Matrix de última generación en un ambiente que motiva.</p>
     </div>
 
     <div class="gallery">
@@ -170,7 +172,7 @@
         <img src="assets/img/gym-1.png" alt="Cardio con vista al mar" style="object-position: center 15%;" />
         <figcaption>
           <span class="gallery__num">01</span>
-          <h3>Cardio con vista</h3>
+          <h3 data-en="Cardio with a view">Cardio con vista</h3>
         </figcaption>
       </figure>
 
@@ -178,7 +180,7 @@
         <img src="assets/img/wa-2.jpeg" alt="Zona de máquinas Life Fitness" />
         <figcaption>
           <span class="gallery__num">02</span>
-          <h3>Zona Life Fitness</h3>
+          <h3 data-en="Life Fitness Zone">Zona Life Fitness</h3>
         </figcaption>
       </figure>
 
@@ -186,7 +188,7 @@
         <img src="assets/img/gym-3.png" alt="Estudio de Pilates Reformer" />
         <figcaption>
           <span class="gallery__num">03</span>
-          <h3>Studio Pilates</h3>
+          <h3 data-en="Pilates Studio">Studio Pilates</h3>
         </figcaption>
       </figure>
 
@@ -194,15 +196,15 @@
         <img src="assets/img/wa-3.jpeg" alt="Treadmill al atardecer" />
         <figcaption>
           <span class="gallery__num">04</span>
-          <h3>Golden Hour</h3>
+          <h3 data-en="Golden Hour">Golden Hour</h3>
         </figcaption>
       </figure>
 
       <figure class="gallery__item reveal">
-        <img src="assets/img/gym-4.png" alt="Zona de fuerza" />
+        <img src="assets/img/gym-4.png" alt="Zona de pesas" />
         <figcaption>
           <span class="gallery__num">05</span>
-          <h3>Powerlifting</h3>
+          <h3 data-en="Weights">Pesas</h3>
         </figcaption>
       </figure>
 
@@ -210,7 +212,7 @@
         <img src="assets/img/gym-2.png" alt="Área funcional con turf" />
         <figcaption>
           <span class="gallery__num">06</span>
-          <h3>Área funcional</h3>
+          <h3 data-en="Functional Area">Área funcional</h3>
         </figcaption>
       </figure>
     </div>
@@ -221,12 +223,12 @@
     <video class="video-showcase__video" id="tourVideo" src="assets/img/tour.mp4" autoplay muted loop playsinline preload="metadata"></video>
     <div class="video-showcase__veil"></div>
     <div class="video-showcase__content">
-      <span class="video-showcase__tag">TOUR VIRTUAL</span>
-      <h2>Bienvenido a <em>45 Life Fitness</em></h2>
-      <p>Un vistazo real a nuestras instalaciones. Coaches, comunidad y equipo de primera línea.</p>
+      <span class="video-showcase__tag" data-en="VIRTUAL TOUR">TOUR VIRTUAL</span>
+      <h2 data-en="Welcome to <em>45 Life Fitness</em>">Bienvenido a <em>45 Life Fitness</em></h2>
+      <p data-en="A real glimpse of our facilities. Coaches, community and top-tier equipment.">Un vistazo real a nuestras instalaciones. Coaches, comunidad y equipo de primera línea.</p>
       <button class="video-btn" id="videoBtn" aria-label="Activar sonido">
         <svg viewBox="0 0 24 24" fill="currentColor" id="videoIcon"><path d="M4 9v6h4l5 5V4L8 9H4zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg>
-        <span id="videoHint">Activar sonido</span>
+        <span id="videoHint" data-en="Enable sound">Activar sonido</span>
       </button>
     </div>
   </section>
@@ -234,86 +236,86 @@
   <!-- ============ PRECIOS ============ -->
   <section class="section prices" id="precios">
     <div class="section__head">
-      <span class="section__tag reveal">03 — LISTA DE PRECIOS 2026</span>
-      <h2 class="section__title reveal">Precios claros. Sin permanencia.</h2>
-      <p class="section__lead reveal">Inscripción única de $600. Cancela o cambia de plan cuando quieras.</p>
+      <span class="section__tag reveal" data-en="03 — PRICE LIST 2026">03 — LISTA DE PRECIOS 2026</span>
+      <h2 class="section__title reveal" data-en="Clear pricing. No lock-in.">Precios claros. Sin permanencia.</h2>
+      <p class="section__lead reveal" data-en="One-time joining fee of $600 MXN. Cancel or change your plan anytime.">Inscripción única de $600. Cancela o cambia de plan cuando quieras.</p>
     </div>
 
     <div class="prices__grid">
-      <!-- Columna 1 -->
+      <!-- Col 1 -->
       <div class="prices__col reveal">
         <div class="prices__header">
-          <span class="prices__label">GYM · SPINNING · COMBOS</span>
-          <h3>Membresías</h3>
+          <span class="prices__label" data-en="GYM · SPINNING · COMBOS">GYM · SPINNING · COMBOS</span>
+          <h3 data-en="Memberships">Membresías</h3>
         </div>
         <ul class="price-list">
           <li>
-            <span class="price-list__name">Inscripción única</span>
-            <span class="price-list__val">$600</span>
+            <span class="price-list__name" data-en="One-time joining fee">Inscripción única</span>
+            <span class="price-list__val" data-price="600"></span>
           </li>
           <li>
-            <span class="price-list__name">Mensualidad GYM</span>
-            <span class="price-list__val">$1,400</span>
+            <span class="price-list__name" data-en="GYM monthly">Mensualidad GYM</span>
+            <span class="price-list__val" data-price="1400"></span>
           </li>
           <li>
-            <span class="price-list__name">Mensualidad Spinning</span>
-            <span class="price-list__val">$1,600</span>
+            <span class="price-list__name" data-en="Spinning monthly">Mensualidad Spinning</span>
+            <span class="price-list__val" data-price="1600"></span>
           </li>
           <li class="price-list__highlight">
-            <span class="price-list__name">GYM + Spinning</span>
-            <span class="price-list__val">$1,800</span>
+            <span class="price-list__name" data-en="GYM + Spinning">GYM + Spinning</span>
+            <span class="price-list__val" data-price="1800"></span>
           </li>
           <li>
-            <span class="price-list__name">6 meses GYM <em>ahorra 24%</em></span>
-            <span class="price-list__val">$6,400</span>
+            <span class="price-list__name" data-en="6 months GYM <em>save 24%</em>">6 meses GYM <em>ahorra 24%</em></span>
+            <span class="price-list__val" data-price="6400"></span>
           </li>
           <li>
-            <span class="price-list__name">12 meses GYM <em>ahorra 17%</em></span>
-            <span class="price-list__val">$14,000</span>
+            <span class="price-list__name" data-en="12 months GYM <em>save 17%</em>">12 meses GYM <em>ahorra 17%</em></span>
+            <span class="price-list__val" data-price="14000"></span>
           </li>
           <li class="price-list__highlight price-list__highlight--pro">
-            <span class="price-list__name">GYM + Spinning + 8 Pilates <span class="badge">TOP</span></span>
-            <span class="price-list__val">$3,500</span>
+            <span class="price-list__name" data-en="GYM + Spinning + 8 Pilates <span class='badge'>TOP</span>">GYM + Spinning + 8 Pilates <span class="badge">TOP</span></span>
+            <span class="price-list__val" data-price="3500"></span>
           </li>
         </ul>
-        <a href="https://wa.me/526241581056?text=Hola,%20quiero%20información%20sobre%20las%20membresías" target="_blank" rel="noopener" class="prices__cta">
+        <a href="https://wa.me/526241581056?text=Hola,%20quiero%20información%20sobre%20las%20membresías" target="_blank" rel="noopener" class="prices__cta" data-en="I want my membership →">
           Quiero mi membresía →
         </a>
       </div>
 
-      <!-- Columna 2: PILATES -->
+      <!-- Col 2: PILATES -->
       <div class="prices__col prices__col--featured reveal">
         <div class="prices__header">
-          <span class="prices__label">PAQUETES VÁLIDOS POR 1 MES</span>
-          <h3>Studio Pilates</h3>
+          <span class="prices__label" data-en="PACKAGES VALID FOR 1 MONTH">PAQUETES VÁLIDOS POR 1 MES</span>
+          <h3 data-en="Pilates Studio">Studio Pilates</h3>
         </div>
 
-        <div class="price-sub">Combo GYM + Pilates</div>
+        <div class="price-sub" data-en="GYM + Pilates combo">Combo GYM + Pilates</div>
         <ul class="price-list">
-          <li><span class="price-list__name">GYM + 4 clases</span><span class="price-list__val">$2,000</span></li>
-          <li><span class="price-list__name">GYM + 8 clases</span><span class="price-list__val">$2,800</span></li>
+          <li><span class="price-list__name" data-en="GYM + 4 classes">GYM + 4 clases</span><span class="price-list__val" data-price="2000"></span></li>
+          <li><span class="price-list__name" data-en="GYM + 8 classes">GYM + 8 clases</span><span class="price-list__val" data-price="2800"></span></li>
         </ul>
 
-        <div class="price-sub">Clases sueltas</div>
+        <div class="price-sub" data-en="Individual classes">Clases sueltas</div>
         <ul class="price-list price-list--dense">
-          <li><span class="price-list__name">1 clase</span><span class="price-list__val">$300</span></li>
-          <li><span class="price-list__name">4 clases</span><span class="price-list__val">$1,100</span></li>
-          <li><span class="price-list__name">8 clases</span><span class="price-list__val">$2,100</span></li>
-          <li><span class="price-list__name">12 clases</span><span class="price-list__val">$2,800</span></li>
-          <li><span class="price-list__name">16 clases</span><span class="price-list__val">$3,300</span></li>
+          <li><span class="price-list__name" data-en="1 class">1 clase</span><span class="price-list__val" data-price="300"></span></li>
+          <li><span class="price-list__name" data-en="4 classes">4 clases</span><span class="price-list__val" data-price="1100"></span></li>
+          <li><span class="price-list__name" data-en="8 classes">8 clases</span><span class="price-list__val" data-price="2100"></span></li>
+          <li><span class="price-list__name" data-en="12 classes">12 clases</span><span class="price-list__val" data-price="2800"></span></li>
+          <li><span class="price-list__name" data-en="16 classes">16 clases</span><span class="price-list__val" data-price="3300"></span></li>
           <li class="price-list__highlight">
-            <span class="price-list__name">25 clases <em>vigencia 45 días</em> <span class="badge">BEST</span></span>
-            <span class="price-list__val">$4,500</span>
+            <span class="price-list__name" data-en="25 classes <em>valid 45 days</em> <span class='badge'>BEST</span>">25 clases <em>vigencia 45 días</em> <span class="badge">BEST</span></span>
+            <span class="price-list__val" data-price="4500"></span>
           </li>
         </ul>
 
-        <a href="https://wa.me/526241581056?text=Hola,%20quiero%20información%20sobre%20las%20clases%20de%20Pilates" target="_blank" rel="noopener" class="prices__cta prices__cta--primary">
+        <a href="https://wa.me/526241581056?text=Hola,%20quiero%20información%20sobre%20las%20clases%20de%20Pilates" target="_blank" rel="noopener" class="prices__cta prices__cta--primary" data-en="Book a class →">
           Reservar clase →
         </a>
       </div>
     </div>
 
-    <p class="prices__note reveal">
+    <p class="prices__note reveal" data-en="Prices in Mexican Pesos (MXN). USD conversion at a fixed rate of 17 MXN = 1 USD. Pilates packages are valid for 1 month from date of purchase (except the 25-class pack, valid for 45 days).">
       Precios en pesos MXN. Los paquetes de Pilates son válidos por 1 mes desde la fecha de compra (excepto el paquete de 25 clases con 45 días de vigencia).
     </p>
   </section>
@@ -321,31 +323,31 @@
   <!-- ============ HORARIOS ============ -->
   <section class="section schedule" id="horarios">
     <div class="section__head">
-      <span class="section__tag reveal">04 — HORARIOS</span>
-      <h2 class="section__title reveal">Entrena cuando puedas.</h2>
+      <span class="section__tag reveal" data-en="04 — HOURS">04 — HORARIOS</span>
+      <h2 class="section__title reveal" data-en="Train whenever you can.">Entrena cuando puedas.</h2>
     </div>
 
     <div class="schedule__grid">
       <div class="schedule__card reveal">
-        <span class="schedule__day">Lunes — Viernes</span>
+        <span class="schedule__day" data-en="Monday — Friday">Lunes — Viernes</span>
         <div class="schedule__hours">
           <span>05:00</span><span class="schedule__sep">→</span><span>22:00</span>
         </div>
-        <span class="schedule__note">17 horas continuas</span>
+        <span class="schedule__note" data-en="17 continuous hours">17 horas continuas</span>
       </div>
       <div class="schedule__card reveal">
-        <span class="schedule__day">Sábado</span>
+        <span class="schedule__day" data-en="Saturday">Sábado</span>
         <div class="schedule__hours">
           <span>07:00</span><span class="schedule__sep">→</span><span>15:00</span>
         </div>
-        <span class="schedule__note">Clases especiales AM</span>
+        <span class="schedule__note" data-en="Special AM classes">Clases especiales AM</span>
       </div>
       <div class="schedule__card schedule__card--closed reveal">
-        <span class="schedule__day">Domingo</span>
+        <span class="schedule__day" data-en="Sunday">Domingo</span>
         <div class="schedule__hours">
-          <span>Cerrado</span>
+          <span data-en="Closed">Cerrado</span>
         </div>
-        <span class="schedule__note">Descanso · Recuperación</span>
+        <span class="schedule__note" data-en="Rest · Recovery">Descanso · Recuperación</span>
       </div>
     </div>
   </section>
@@ -353,45 +355,45 @@
   <!-- ============ TESTIMONIOS ============ -->
   <section class="section testimonials">
     <div class="section__head">
-      <span class="section__tag reveal">05 — TESTIMONIOS</span>
-      <h2 class="section__title reveal">Historias reales.</h2>
+      <span class="section__tag reveal" data-en="05 — TESTIMONIALS">05 — TESTIMONIOS</span>
+      <h2 class="section__title reveal" data-en="Real stories.">Historias reales.</h2>
     </div>
 
     <div class="testimonials__grid">
       <article class="testimonial reveal">
         <div class="testimonial__stars">★★★★★</div>
-        <p>"El formato de 45 minutos me cambió la vida. Antes decía que no tenía tiempo, ahora entreno antes de trabajar."</p>
-        <footer><strong>Laura M.</strong> · Miembro desde 2024</footer>
+        <p data-en="&quot;The 45-minute format changed my life. I used to say I didn't have time — now I work out before work.&quot;">"El formato de 45 minutos me cambió la vida. Antes decía que no tenía tiempo, ahora entreno antes de trabajar."</p>
+        <footer data-en="<strong>Laura M.</strong> · Member since 2024"><strong>Laura M.</strong> · Miembro desde 2024</footer>
       </article>
       <article class="testimonial reveal">
         <div class="testimonial__stars">★★★★★</div>
-        <p>"El spinning es adictivo. Las bicis son de otro nivel y el ambiente es puro fuego."</p>
-        <footer><strong>Diego R.</strong> · Miembro desde 2023</footer>
+        <p data-en="&quot;Spinning is addictive. The bikes are next level and the vibe is pure fire.&quot;">"El spinning es adictivo. Las bicis son de otro nivel y el ambiente es puro fuego."</p>
+        <footer data-en="<strong>Diego R.</strong> · Member since 2023"><strong>Diego R.</strong> · Miembro desde 2023</footer>
       </article>
       <article class="testimonial reveal">
         <div class="testimonial__stars">★★★★★</div>
-        <p>"El estudio de Pilates es espectacular. Mi postura cambió completamente en 3 meses."</p>
-        <footer><strong>Carla F.</strong> · Miembro desde 2024</footer>
+        <p data-en="&quot;The Pilates studio is spectacular. My posture completely changed in 3 months.&quot;">"El estudio de Pilates es espectacular. Mi postura cambió completamente en 3 meses."</p>
+        <footer data-en="<strong>Carla F.</strong> · Member since 2024"><strong>Carla F.</strong> · Miembro desde 2024</footer>
       </article>
     </div>
   </section>
 
-  <!-- ============ CTA / CONTACTO ============ -->
+  <!-- ============ CONTACTO ============ -->
   <section class="section contact" id="contacto">
     <div class="contact__inner">
       <div class="contact__copy">
-        <span class="section__tag reveal">06 — VISÍTANOS</span>
-        <h2 class="section__title reveal">Reserva tu clase de prueba.</h2>
-        <p class="reveal">Agenda un tour, conoce las instalaciones y prueba tu primera clase gratis. Solo tienes que llegar.</p>
+        <span class="section__tag reveal" data-en="06 — VISIT US">06 — VISÍTANOS</span>
+        <h2 class="section__title reveal" data-en="Book your trial class.">Reserva tu clase de prueba.</h2>
+        <p class="reveal" data-en="Book a tour, see the facilities and try your first class free. Just show up.">Agenda un tour, conoce las instalaciones y prueba tu primera clase gratis. Solo tienes que llegar.</p>
 
         <div class="contact__info">
           <div class="contact__info-block reveal">
-            <span>UBICACIÓN</span>
-            <p>Plaza Novva, Tezal<br/>Los Cabos, BCS</p>
+            <span data-en="LOCATION">UBICACIÓN</span>
+            <p data-en="Plaza Novva, Tezal<br/>Los Cabos, BCS">Plaza Novva, Tezal<br/>Los Cabos, BCS</p>
           </div>
           <div class="contact__info-block reveal">
-            <span>HORARIO</span>
-            <p>Lun—Vie · 5AM—10PM<br/>Sábado · 7AM—3PM</p>
+            <span data-en="HOURS">HORARIO</span>
+            <p data-en="Mon—Fri · 5AM—10PM<br/>Saturday · 7AM—3PM">Lun—Vie · 5AM—10PM<br/>Sábado · 7AM—3PM</p>
           </div>
           <div class="contact__info-block reveal">
             <span>WHATSAPP</span>
@@ -406,39 +408,39 @@
 
       <form class="contact__form reveal" onsubmit="event.preventDefault(); this.querySelector('.form__msg').classList.add('is-visible'); setTimeout(() => window.open('https://wa.me/526241581056?text=Hola,%20me%20interesa%20información%20sobre%2045%20Life%20Fitness', '_blank'), 700);">
         <div class="form__field">
-          <label for="fName">Nombre completo</label>
-          <input type="text" required id="fName" placeholder="Tu nombre" />
+          <label for="fName" data-en="Full name">Nombre completo</label>
+          <input type="text" required id="fName" placeholder="Tu nombre" data-en-placeholder="Your name" />
         </div>
         <div class="form__field">
           <label for="fEmail">Email</label>
-          <input type="email" required id="fEmail" placeholder="tucorreo@ejemplo.com" />
+          <input type="email" required id="fEmail" placeholder="tucorreo@ejemplo.com" data-en-placeholder="you@example.com" />
         </div>
         <div class="form__field">
-          <label for="fPhone">Teléfono</label>
+          <label for="fPhone" data-en="Phone">Teléfono</label>
           <input type="tel" required id="fPhone" placeholder="624 000 0000" />
         </div>
         <div class="form__field">
-          <label for="fPlan">¿Qué te interesa?</label>
+          <label for="fPlan" data-en="What are you interested in?">¿Qué te interesa?</label>
           <select id="fPlan" required>
-            <option value="">Selecciona una opción</option>
-            <option>Mensualidad GYM</option>
-            <option>Mensualidad Spinning</option>
-            <option>GYM + Spinning</option>
-            <option>Paquete Pilates</option>
-            <option>Solo tour</option>
+            <option value="" data-en="Select an option">Selecciona una opción</option>
+            <option data-en="GYM monthly">Mensualidad GYM</option>
+            <option data-en="Spinning monthly">Mensualidad Spinning</option>
+            <option data-en="GYM + Spinning">GYM + Spinning</option>
+            <option data-en="Pilates package">Paquete Pilates</option>
+            <option data-en="Just a tour">Solo tour</option>
           </select>
         </div>
         <div class="form__field form__field--full">
-          <label for="fMsg">Mensaje (opcional)</label>
-          <textarea id="fMsg" placeholder="Cuéntanos qué buscas…" rows="3"></textarea>
+          <label for="fMsg" data-en="Message (optional)">Mensaje (opcional)</label>
+          <textarea id="fMsg" placeholder="Cuéntanos qué buscas…" data-en-placeholder="Tell us what you're looking for…" rows="3"></textarea>
         </div>
-        <button type="submit" class="btn btn--primary form__submit">Enviar por WhatsApp</button>
-        <p class="form__msg">✓ ¡Perfecto! Te redirigimos a WhatsApp para continuar…</p>
+        <button type="submit" class="btn btn--primary form__submit" data-en="Send via WhatsApp">Enviar por WhatsApp</button>
+        <p class="form__msg" data-en="✓ Perfect! Redirecting you to WhatsApp…">✓ ¡Perfecto! Te redirigimos a WhatsApp para continuar…</p>
       </form>
     </div>
   </section>
 
-  <!-- ============ WHATSAPP FLOATING ============ -->
+  <!-- ============ WHATSAPP FLOAT ============ -->
   <a href="https://wa.me/526241581056?text=Hola,%20me%20interesa%20información%20sobre%2045%20Life%20Fitness" target="_blank" rel="noopener" class="wa-float" aria-label="Contactar por WhatsApp">
     <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M20.5 3.5A11 11 0 0 0 3.9 17.1L2.9 21l4-1a11 11 0 0 0 13.6-16.5zM12 20a8 8 0 0 1-4-1.1l-.3-.2-2.4.6.7-2.3-.2-.4A8 8 0 1 1 12 20zm4.5-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7 1c-.2.2-.3.2-.5.1a6.6 6.6 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.4c-.2 0-.5.1-.7.3a2.6 2.6 0 0 0-.8 1.9c0 1.1.8 2.2.9 2.4a9 9 0 0 0 3.5 3c.5.2.9.3 1.2.4a2.9 2.9 0 0 0 1.4 0c.4-.1 1.2-.5 1.4-1s.2-.9.1-1l-.5-.2z"/></svg>
   </a>
@@ -450,34 +452,34 @@
         <img src="assets/img/wa-4.jpeg" alt="45 Life Fitness" />
         <div>
           <h4>45 LIFE FITNESS</h4>
-          <p>Plaza Novva, Tezal · Los Cabos, BCS</p>
+          <p data-en="Plaza Novva, Tezal · Los Cabos, BCS">Plaza Novva, Tezal · Los Cabos, BCS</p>
         </div>
       </div>
       <div class="footer__grid">
         <div>
-          <h5>Menú</h5>
-          <a href="#servicios">Servicios</a>
-          <a href="#instalaciones">Instalaciones</a>
-          <a href="#precios">Precios</a>
-          <a href="#horarios">Horarios</a>
+          <h5 data-en="Menu">Menú</h5>
+          <a href="#servicios" data-en="Services">Servicios</a>
+          <a href="#instalaciones" data-en="Facilities">Instalaciones</a>
+          <a href="#precios" data-en="Prices">Precios</a>
+          <a href="#horarios" data-en="Hours">Horarios</a>
         </div>
         <div>
-          <h5>Redes</h5>
+          <h5 data-en="Social">Redes</h5>
           <a href="#">Instagram</a>
           <a href="#">TikTok</a>
           <a href="#">Facebook</a>
           <a href="https://wa.me/526241581056" target="_blank" rel="noopener">WhatsApp</a>
         </div>
         <div>
-          <h5>Contacto</h5>
+          <h5 data-en="Contact">Contacto</h5>
           <a href="https://wa.me/526241581056" target="_blank" rel="noopener">+52 624 158 10 56</a>
-          <p>Lun—Vie 5:00 — 22:00<br/>Sábado 7:00 — 15:00</p>
+          <p data-en="Mon—Fri 5:00 — 22:00<br/>Saturday 7:00 — 15:00">Lun—Vie 5:00 — 22:00<br/>Sábado 7:00 — 15:00</p>
         </div>
       </div>
     </div>
     <div class="footer__bottom">
-      <span>© 2026 45 LIFE FITNESS. Todos los derechos reservados.</span>
-      <span>Hecho con ⚡ en Los Cabos.</span>
+      <span data-en="© 2026 45 LIFE FITNESS. All rights reserved.">© 2026 45 LIFE FITNESS. Todos los derechos reservados.</span>
+      <span data-en="Built with ⚡ in Los Cabos.">Hecho con ⚡ en Los Cabos.</span>
     </div>
   </footer>
 

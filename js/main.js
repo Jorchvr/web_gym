@@ -1,6 +1,13 @@
 /* ================================================
-   45 LIFE FITNESS — Lightweight interactions
+   45 LIFE FITNESS — Interactions
    ================================================ */
+
+const USD_RATE = 17; // 17 MXN = 1 USD (fixed)
+const DICT = {
+  es: { activate: 'Activar sonido', mute: 'Silenciar sonido', langLabel: 'EN' },
+  en: { activate: 'Enable sound', mute: 'Mute sound', langLabel: 'ES' }
+};
+let currentLang = localStorage.getItem('lang') || 'es';
 
 /* ---------- Nav scroll state + scroll progress ---------- */
 (function nav() {
@@ -55,7 +62,7 @@
   nums.forEach(n => io.observe(n));
 })();
 
-/* ---------- Smooth anchor scroll with nav offset ---------- */
+/* ---------- Smooth anchor scroll ---------- */
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const id = a.getAttribute('href');
@@ -78,24 +85,73 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 })();
 
 /* ---------- Video sound toggle ---------- */
+const videoState = { on: false };
 (function videoToggle() {
   const vid = document.getElementById('tourVideo');
   const btn = document.getElementById('videoBtn');
-  const hint = document.getElementById('videoHint');
   const icon = document.getElementById('videoIcon');
   if (!vid || !btn) return;
   const iconMuted = '<path d="M4 9v6h4l5 5V4L8 9H4zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/>';
   const iconOn = '<path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2a7 7 0 0 1 0 13.6v2A9 9 0 0 0 14 3.2z"/>';
   btn.addEventListener('click', () => {
     vid.muted = !vid.muted;
-    if (!vid.muted) {
-      vid.volume = 0.7;
-      hint.textContent = 'Silenciar sonido';
-      icon.innerHTML = iconOn;
-    } else {
-      hint.textContent = 'Activar sonido';
-      icon.innerHTML = iconMuted;
-    }
+    videoState.on = !vid.muted;
+    if (videoState.on) vid.volume = 0.7;
+    icon.innerHTML = videoState.on ? iconOn : iconMuted;
+    updateVideoHint();
     vid.play().catch(() => {});
   });
 })();
+
+function updateVideoHint() {
+  const hint = document.getElementById('videoHint');
+  if (!hint) return;
+  hint.textContent = videoState.on ? DICT[currentLang].mute : DICT[currentLang].activate;
+}
+
+/* ---------- Language toggle ---------- */
+(function langToggle() {
+  const btn = document.getElementById('langBtn');
+  if (!btn) return;
+  // Cache original ES content on load
+  document.querySelectorAll('[data-en]').forEach(el => {
+    el.dataset.es = el.innerHTML;
+  });
+  document.querySelectorAll('[data-en-placeholder]').forEach(el => {
+    el.dataset.esPlaceholder = el.placeholder;
+  });
+  applyLang(currentLang);
+  btn.addEventListener('click', () => {
+    applyLang(currentLang === 'es' ? 'en' : 'es');
+  });
+})();
+
+function applyLang(lang) {
+  currentLang = lang;
+  document.documentElement.lang = lang;
+  localStorage.setItem('lang', lang);
+
+  // Text content (innerHTML preserves inner tags)
+  document.querySelectorAll('[data-en]').forEach(el => {
+    el.innerHTML = lang === 'en' ? el.dataset.en : el.dataset.es;
+  });
+  // Placeholders
+  document.querySelectorAll('[data-en-placeholder]').forEach(el => {
+    el.placeholder = lang === 'en' ? el.dataset.enPlaceholder : el.dataset.esPlaceholder;
+  });
+  // Prices
+  document.querySelectorAll('[data-price]').forEach(el => {
+    const mxn = +el.dataset.price;
+    if (lang === 'en') {
+      const usd = Math.round(mxn / USD_RATE);
+      el.textContent = '$' + usd.toLocaleString('en-US') + ' USD';
+    } else {
+      el.textContent = '$' + mxn.toLocaleString('es-MX');
+    }
+  });
+  // Lang toggle button label
+  const btn = document.getElementById('langBtn');
+  if (btn) btn.textContent = DICT[lang].langLabel;
+  // Video hint (if user already interacted)
+  updateVideoHint();
+}
