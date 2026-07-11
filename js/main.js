@@ -214,10 +214,27 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   clones.forEach(c => track.appendChild(c));
 })();
 
-/* ---------- Play button demo interaction ---------- */
-document.querySelector('.play-btn')?.addEventListener('click', () => {
-  const b = document.querySelector('.play-btn');
-  b.style.transform = 'scale(0.9)';
-  setTimeout(() => b.style.transform = '', 200);
-  alert('▶ Video tour próximamente. ¡Reserva tu visita presencial para el tour completo!');
-});
+/* ---------- Video sound toggle ---------- */
+(function videoToggle() {
+  const vid = document.getElementById('tourVideo');
+  const btn = document.getElementById('videoBtn');
+  const hint = document.getElementById('videoHint');
+  const iconWrap = document.getElementById('videoIcon');
+  if (!vid || !btn) return;
+  const iconMuted = '<path d="M4 9v6h4l5 5V4L8 9H4zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/>';
+  const iconOn = '<path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2a7 7 0 0 1 0 13.6v2A9 9 0 0 0 14 3.2z"/>';
+  btn.addEventListener('click', () => {
+    vid.muted = !vid.muted;
+    if (!vid.muted) {
+      vid.volume = 0.6;
+      hint.textContent = 'SONIDO ACTIVO · CLIC PARA SILENCIAR';
+      iconWrap.innerHTML = iconOn;
+      btn.style.background = '#fff';
+    } else {
+      hint.textContent = 'CLIC PARA ACTIVAR SONIDO';
+      iconWrap.innerHTML = iconMuted;
+      btn.style.background = '';
+    }
+    vid.play().catch(() => {});
+  });
+})();
